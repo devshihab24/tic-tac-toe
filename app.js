@@ -42,10 +42,14 @@ boxes.forEach((box) => {
         if(turnO === true){     //if "O" has the turn
             box.innerText = "O"
             turnO = false;
+            box.classList.add("o-color");
+            box.classList.remove("x-color")
         }
         else{                   //if "X" has the turn
             box.innerText = "X"
             turnO = true;
+            box.classList.add("x-color");
+            box.classList.remove("o-color")
         }
         box.disabled = true;
 
@@ -75,7 +79,7 @@ const checkWinner = () => {
  * winner check korar por upore ekti dialogue box show korar jonno j k win hoice seitar jonno function
  */
 let showWinner = (winner) => {
-    para.innerText = `Congratulations. Winner is ${winner}😍`;
+    para.innerText = `Congratulations. Winner is ${winner}🎉`;
     messageContainer.classList.remove("hide");
     disabledBox();
 }
