@@ -89,6 +89,7 @@ body {
     .box{
         height: 28vmin;
         width: 28vmin;
+        font-size: 14vmin;
     }
     .message-container{
         height: 40vmin;
